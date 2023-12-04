@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .menu-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001427;
+    padding: 10px 20px;
+    width: 100%;
+    background-image: #001427;
+  }
+  
+  .menu-top ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-right: auto;
+  }
+  
+  .menu-top-toggle {
+    display: none;
+  }
+  
+  .menu-top li {
+      align-items: center;
+      display: block;
+  }
+  /* .menu-top.active ul li a:hover {
+    background-color: #c60f11;
+    color: white;
+  } */
+  .menu-top li a {
+      text-decoration: none;
+      font-size: small;
+      font-weight: 600;
+      color: #fff;
+      padding: 5px 15px;
+      transition: background-color 0.3s;
+      font-family: sans-serif;
+  }
+  
+  .menu-top li a:hover {
+    color: #708d81;
+  }
+  
+  .menu-top li a:active {
+    color: #c60f11;
+    font-weight: 700;
+  }
+  
+  .avatar-container {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    margin: 1px;
+  }
+  
+  .avatar-container img.avatar {
+    max-width: 45px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 5px 40px;    
+  }
+  
+  .img-avatar {
+    height: auto;
+    width: 70px;
+  }
+  
+  .logo-libreria{
+      height: 60px;
+      width: auto;
+      display: flex;
+      align-items: center;
+      margin-right: 30px;
+
+      img{
+          height: 70px;
+          width: auto;
+          margin: 15px;
+      }
+
+      label{
+        font-size: larger;
+        color: #748cab;
+        font-weight: 400;
+        font-family: sans-serif;
+      }
+
+      svg{
+        color: #fff;
+        font-size: x-large;
+        margin-right: 15px;
+      }
+  }
+  
+  .content {
+    padding-left: 80px;
+    padding-right: 40px;
+  }
+  
+  .logo {
+    width: auto;
+    height: 75px;
+  }
+
+  .link-to-pqrsf-header{
+    background-color: #00427a;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+
+    .link-pqrsf-top{
+      text-decoration: none;
+      font-size: small;
+      align-items: center;
+      color: #fff;
+      margin: 10px 20px;
+      display: flex;
+
+      svg{
+        fill:#fff;
+        margin: 0px 10px;
+      }
+
+      &:hover{
+        color: #001427;
+      }
+    }
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media (max-width: 768px) {
+    .menu-top {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+      width: 100%;
+    }
+  
+    .logo-container {
+      display: none;
+    }
+  
+    .menu-top-toggle {
+      position: relative;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+  
+    .menu-top-icon {
+      font-size: 24px;
+    }
+  
+    .dropdown-top-icon {
+      font-size: 18px;
+      margin-left: 5px;
+    }
+  
+    .menu-top ul {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: #023e7d;
+      border: 1px solid #001845;
+      position: absolute;
+      top: 13.5%;
+      left: 0;
+      z-index: 1;
+      width: 50%;
+    }
+  
+    .dropdown-top-content {
+      margin-top: 0px;
+      margin-bottom: 0px;
+  
+      & ul {
+        margin: 4px 0px;
+      }
+    }
+  
+    .menu-top.active ul {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .menu-top li {
+      margin: 10px 0;
+    }
+  
+    .menu-top-toggle.open .menu-icon {
+      display: none;
+    }
+  
+    .menu-top-toggle.open .dropdown-icon {
+      display: inline;
+    }
+  
+    .content {
+      padding: 20px;
+    }
+  
+    .avatar-container img.avatar {
+      margin: 0 50px;
+    }
+  }
+  

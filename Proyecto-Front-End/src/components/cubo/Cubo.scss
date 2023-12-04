@@ -1,0 +1,227 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: 1;
+
+    & .cube {
+      width: 100px;
+      height: 100px;
+      transform-style: preserve-3d;
+      animation: spin 8s infinite linear;
+      position: fixed;
+      bottom: 10%;
+      right: 50px;
+      & div {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        opacity: 0.8;
+      }
+      & .front {
+        transform: translateZ(50px);
+        background: linear-gradient(45deg, #55AEF1, #4661d8, #062D4B, #020B13);
+      }
+      & .back {
+        transform: translateZ(-50px);
+        background: linear-gradient(45deg, #55AEF1, #4661d8, #062D4B, #020B13);
+      }
+      & .top {
+        transform: rotateX(90deg) translateZ(50px);
+        background: linear-gradient(45deg, #55AEF1, #4661d8, #062D4B, #020B13);
+      }
+      & .bottom {
+        transform: rotateX(90deg) translateZ(-50px);
+        background: linear-gradient(45deg, #55AEF1, #4661d8, #062D4B, #020B13);
+      }
+      & .left {
+        transform: rotateY(90deg) translateZ(50px);
+        background: linear-gradient(45deg, #55AEF1, #4661d8, #062D4B, #020B13);
+      }
+      & .right {
+        transform: rotateY(90deg) translateZ(-50px);
+        background: linear-gradient(45deg, #55AEF1, #4661d8, #062D4B, #020B13);
+      }
+    }
+  }
+
+  .optionsContainer{
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 90%;
+    z-index: 1;
+
+    & .cube1 {
+      width: 100px;
+      height: 100px;
+      transform-style: preserve-3d;
+      transform:rotateX(348deg) rotateZ(349deg) rotateY(341deg) scaleX(0.7) scaleY(0.7) scaleZ(0.7);
+      position: fixed;
+      bottom: 300px;
+      right: 50px;
+
+      & div {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        opacity: 0.8;
+      }
+      & .front {
+        transform: translateZ(50px);
+        background: linear-gradient(45deg, #1DA1F2, #1877F2, #1253E2, #062D4B);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & .svg-icon{
+          width: auto;
+          height: 90px;
+        }
+      }
+      & .back {
+        transform: translateZ(-50px);
+        background: linear-gradient(45deg, #1DA1F2, #1877F2, #1253E2, #062D4B);
+      }
+      & .top {
+        transform: rotateX(90deg) translateZ(50px);
+        background: linear-gradient(45deg, #1DA1F2, #1877F2, #1253E2, #062D4B);
+      }
+      & .bottom {
+        transform: rotateX(90deg) translateZ(-50px);
+        background: linear-gradient(45deg, #1DA1F2, #1877F2, #1253E2, #062D4B);
+        
+      }
+      & .left {
+        transform: rotateY(90deg) translateZ(50px);
+        background: linear-gradient(45deg, #1DA1F2, #1877F2, #1253E2, #062D4B);
+
+      }
+      & .right {
+        transform: rotateY(90deg) translateZ(-50px);
+        background: linear-gradient(45deg, #1DA1F2, #1877F2, #1253E2, #062D4B);
+        
+      }
+    }
+
+    & .cube2 {
+      width: 100px;
+      height: 100px;
+      transform-style: preserve-3d;
+      transform:rotateX(348deg) rotateZ(349deg) rotateY(341deg) scaleX(0.7) scaleY(0.7) scaleZ(0.7);
+      position: fixed;
+      bottom: 450px;
+      right: 50px;
+
+      & div {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        opacity: 0.8;
+      }
+      & .front {
+        transform: translateZ(50px);
+        background: linear-gradient(45deg, #FFD700, #FF1493, #8A2BE2, #FF4500);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        & .svg-icon{
+          width: auto;
+          height: 100px;
+        }
+      }
+      & .back {
+        transform: translateZ(-50px);
+        background: linear-gradient(45deg, #FFD700, #FF1493, #8A2BE2, #FF4500);
+      }
+      & .top {
+        transform: rotateX(90deg) translateZ(50px);
+        background: linear-gradient(45deg, #FFD700, #FF1493, #8A2BE2, #FF4500);
+      }
+      & .bottom {
+        transform: rotateX(90deg) translateZ(-50px);
+        background: linear-gradient(45deg, #FFD700, #FF1493, #8A2BE2, #FF4500);
+
+        
+      }
+      & .left {
+        transform: rotateY(90deg) translateZ(50px);
+        background: linear-gradient(45deg, #FFD700, #FF1493, #8A2BE2, #FF4500);
+
+      }
+      & .right {
+        transform: rotateY(90deg) translateZ(-50px);
+        background: linear-gradient(45deg, #FFD700, #FF1493, #8A2BE2, #FF4500);
+
+        
+      }
+    }
+
+    & .cube3 {
+      width: 100px;
+      height: 100px;
+      transform-style: preserve-3d;
+      transform:rotateX(348deg) rotateZ(349deg) rotateY(341deg) scaleX(0.7) scaleY(0.7) scaleZ(0.7);
+      position: fixed;
+      bottom: 600px;
+      right: 50px;
+
+      & div {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        opacity: 0.8;
+      }
+      & .front {
+        transform: translateZ(50px);
+        background: linear-gradient(45deg, #0077B5, #0D84C1, #127DBE, #147BBE, #1A6DAB, #00335B);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        & .svg-icon{
+          width: auto;
+          height: 80px;
+        }
+      }
+      & .back {
+        transform: translateZ(-50px);
+        background: linear-gradient(45deg, #0077B5, #0D84C1, #127DBE, #147BBE, #1A6DAB, #00335B);
+      }
+      & .top {
+        transform: rotateX(90deg) translateZ(50px);
+        background: linear-gradient(45deg, #0077B5, #0D84C1, #127DBE, #147BBE, #1A6DAB, #00335B);
+      }
+      & .bottom {
+        transform: rotateX(90deg) translateZ(-50px);
+        background: linear-gradient(45deg, #0077B5, #0D84C1, #127DBE, #147BBE, #1A6DAB, #00335B);
+        
+      }
+      & .left {
+        transform: rotateY(90deg) translateZ(50px);
+        background: linear-gradient(45deg, #0077B5, #0D84C1, #127DBE, #147BBE, #1A6DAB, #00335B);
+
+      }
+      & .right {
+        transform: rotateY(90deg) translateZ(-50px);
+        background: linear-gradient(45deg, #0077B5, #0D84C1, #127DBE, #147BBE, #1A6DAB, #00335B);
+        
+      }
+    }
+
+    & .option:hover{
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+  }
+  
+  @keyframes spin{
+      0%{
+          transform: rotateX(0deg) rotateY(0deg);
+      }
+      100%{
+          transform: rotateX(360deg) rotateY(360deg);
+      }
+  } 

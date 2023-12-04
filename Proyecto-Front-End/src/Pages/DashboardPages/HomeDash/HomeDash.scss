@@ -1,0 +1,126 @@
+.content-admin-profile-home{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.admin-profile{
+    margin: 20px;
+    padding: 10px;
+
+    .Titulo-profile{
+        font-size: larger;
+        color: #001427;
+        font-weight: 600;
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .avatar-container-admin-profile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .info-admin{
+        font-size: large;
+        font-weight: 600;
+        color: #001427;
+        display: flex;
+        justify-content: center;
+    }
+
+    .label-info-admin{
+        margin-top: 10px;
+        margin-bottom: 5px;
+        margin-left: 6vw;
+        display: flex;
+    }
+
+    .info-container{
+        margin-top: 20px;
+    }
+}
+
+.botones-admin{
+    display: flex;
+    flex-direction: column;
+    top: 70px;
+    position: relative;
+
+    .boton{
+        margin: 10px 80px;
+
+        button{
+            width: 200px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content-admin-profile-home{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .admin-profile{
+        margin: 10px;
+        padding: 10px;
+    
+        .Titulo-profile{
+            font-size: larger;
+            color: #001427;
+            font-weight: 600;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .avatar-container-admin-profile{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+        }
+    
+        .info-admin{
+            font-size: large;
+            font-weight: 600;
+            color: #001427;
+            display: flex;
+            justify-content: center;
+        }
+    
+        .label-info-admin{
+            margin-top: 10px;
+            margin-bottom: 5px;
+            margin-left: 6vw;
+            display: flex;
+        }
+    
+        .info-container{
+            margin-top: 20px;
+        }
+    }
+    
+    .botones-admin{
+        display: flex;
+        flex-direction: column;
+        top: -30px;
+        position: relative;
+        margin-top: 20px;
+    
+        .boton{
+            margin: 10px 65px;
+    
+            button{
+                width: 200px;
+            }
+        }
+    }
+}

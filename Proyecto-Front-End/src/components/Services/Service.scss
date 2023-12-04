@@ -1,0 +1,27 @@
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 20px;
+    padding: 10px 25px;
+    align-items: center;
+
+    .card{
+        height: 400px;
+        width: auto;
+    }
+}
+
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.css-dzqq8e-MuiPaper-root-MuiCard-root{
+    margin: 20px;
+    box-shadow:  3px 4px 21px 3px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+  }
+
+
+.services-page{
+    padding: 30px;
+}

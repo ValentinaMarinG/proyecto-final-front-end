@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 6vw;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.menu-dash {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #001427;
+  padding: 10px 20px;
+  width: 100%;
+  height: 4vw;
+  background-image: #1b263b;
+}
+
+.menu-dash ul {
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin-right: auto;
+}
+
+.menu-dash-toggle {
+  display: none;
+}
+
+.menu-dash li {
+  align-items: center;
+  display: block;
+}
+.menu-dash.active ul li a:hover {
+  background-color: #0e77b0;
+  color: white;
+}
+.menu-dash li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+  font-family: sans-serif;
+}
+
+.menu-dash li a:hover {
+  background-color: #0e77b0;
+  color: white;
+}
+
+.menu-dash li a:active {
+  color: blue;
+  font-weight: 700;
+}
+
+.avatar-container-dash {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+
+  svg {
+    font-size: 5vw;
+    color: #fff;
+    align-self: center;
+  }
+}
+
+.avatar-container-circulo .img-avatar-dash {
+  max-width: 50px;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 40px;
+
+  svg {
+    font-size: 5vw;
+    color: #fff;
+    align-self: center;
+  }
+
+  .MuiAvatar-root {
+    color: #0d1b2a !important;
+    width: 60px !important;
+  }
+}
+
+.logo-libreria-dash {
+  height: 90px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  margin-left: -13px;
+
+  .menu-icon-menu-dash {
+    color: #fff;
+    font-size: 2.5vw;
+    margin-left: 10px;
+  }
+
+  img {
+    height: 4vw;
+    width: auto;
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+
+  label {
+    font-size: larger;
+    color: #748cab;
+    font-weight: 600;
+    font-family: sans-serif;
+  }
+}
+
+.content {
+  padding-left: 80px;
+  padding-right: 40px;
+}
+
+.logo {
+  width: auto;
+  height: 75px;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .menu-dash {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001427;
+    padding: 10px 20px;
+    width: 100%;
+    height: 10vw;
+    background-color: #001427;
+  }
+
+  .menu-dash ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-right: auto;
+  }
+
+  .menu-dash-toggle {
+    display: none;
+  }
+
+  .menu-dash li {
+    align-items: center;
+    display: block;
+  }
+  .menu-dash.active ul li a:hover {
+    background-color: #0e77b0;
+    color: white;
+  }
+  .menu-dash li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+    font-family: sans-serif;
+  }
+
+  .menu-dash li a:hover {
+    background-color: #0e77b0;
+    color: white;
+  }
+
+  .menu-dash li a:active {
+    color: blue;
+    font-weight: 700;
+  }
+
+  .avatar-container-dash {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+
+    svg {
+      font-size: 10vw;
+      color: #fff;
+      align-self: center;
+    }
+  }
+
+  .avatar-container-circulo .img-avatar-dash {
+    max-width: 50px;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 40px;
+
+    svg {
+      font-size: 10vw;
+      color: #fff;
+      align-self: center;
+    }
+
+    .MuiAvatar-root {
+      color: #0d1b2a !important;
+      width: 60px !important;
+    }
+  }
+
+  .logo-libreria-dash {
+    height: 90px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin-left: -13px;
+
+    .menu-icon-menu-dash {
+      color: #fff;
+      font-size: 10vw;
+      margin-left: 0px;
+    }
+
+    img {
+      height: 14vw;
+      width: auto;
+      margin-left: 15px;
+    }
+
+    label {
+      font-size: medium;
+      color: #748cab;
+      font-weight: 600;
+      font-family: sans-serif;
+    }
+  }
+
+  .content {
+    padding-left: 80px;
+    padding-right: 40px;
+  }
+
+  .logo {
+    width: auto;
+    height: 75px;
+  }
+}

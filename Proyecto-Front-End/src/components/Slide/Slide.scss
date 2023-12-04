@@ -1,0 +1,155 @@
+/* .slider_noticias_container {
+  align-items: center;
+  justify-content: center;
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.slide-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  margin: 0 10px;
+}
+
+.image {
+  width: 100px;
+  height: auto;
+}
+
+
+button.slick-arrow.slick-next::before {
+  font-size: 55px;
+  position: absolute;
+  right: 0;
+  color: black;
+}
+
+.slick-dots {
+  bottom: 5px;
+  color: #fff;
+}
+
+.slide-button-container {
+  margin-top: 10px; 
+  margin-right: 25%;
+  text-align: right;
+}
+
+.slick-prev {
+  left: 20%;
+  z-index: 1;
+}
+
+.slick-next {
+  right: 20%;
+  z-index: 1;
+}
+
+.slidee-card {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+
+.slick-track {
+  display: flex !important;
+} */
+
+/* En Slide.scss */
+
+.slider_noticias_container {
+  justify-content: center;
+}
+
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slidee-card-container {
+  display: flex !important;
+  justify-content: space-evenly;
+}
+
+.slidee-card {
+  height: 350px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0eaef;
+  border: 1px solid #acbac3;
+  margin: 0 10px;
+}
+
+.image {
+  width: 150px;
+  height: auto;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 0px !important;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.book-card-div-name {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.book-card-div {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: medium;
+}
+
+.button-ver-mas-slide {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  button {
+    margin: 10px 10px 10px 30px;
+  }
+}
+
+.slick-next {
+  font-size: 50px;
+  fill: #012e58;
+  margin-right: 4vw;
+  z-index: 1;
+}
+
+.slick-prev {
+  font-size: 50px;
+  fill: #012e58;
+  margin-left: 4vw;
+  z-index: 1;
+  svg {
+    fill: #012e58;
+  }
+}

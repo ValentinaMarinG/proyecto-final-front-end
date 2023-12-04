@@ -1,0 +1,28 @@
+.slider_container {
+  align-items: center;
+  justify-content: center;
+  }
+  
+  button.slick-arrow.slick-next::before{
+    font-size: 55px;
+    position: absolute;
+    right: 0;
+    color: black;
+  }
+
+  button.slick-arrow.slick-prev::before{
+    font-size: 55px;
+    position: absolute;
+    left: 0;
+    color: black;
+  }
+
+/*   .slick-dots {
+    bottom: 5px;
+    color: #fff;
+  } */
+
+  .image-h {
+    width: 100%;
+    height: auto;
+  }

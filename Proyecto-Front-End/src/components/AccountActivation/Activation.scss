@@ -1,0 +1,94 @@
+.content-activation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #3e5c76;
+}
+
+.activation-card {
+  margin-top: 15px;
+  height: auto;
+  width: 35%;
+  background-color: #f0ebd8;
+  text-align: center;
+  border-color: #0d1b2a;
+  box-shadow: 1px 2px 5px rgba(0, 0, 10, 1.2);
+}
+
+.activation-card-header {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #0d1b2a;
+  border-color: #0d1b2a;
+  align-items: center;
+
+  .activation-card-header{
+    font-size: larger;
+    color: white;
+    font-weight: 600;
+  }
+}
+
+.activation-message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    .message-activation-label{
+        font-size: larger;
+        font-weight: 600;
+        color: #0d1b2a;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content-activation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #3e5c76;
+      }
+      
+      .activation-card {
+        margin-top: 15px;
+        height: auto;
+        width: 70%;
+        background-color: #f0ebd8;
+        text-align: center;
+        border-color: #0d1b2a;
+        box-shadow: 1px 2px 5px rgba(0, 0, 10, 1.2);
+      }
+      
+      .activation-card-header {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: #0d1b2a;
+        border-color: #0d1b2a;
+        align-items: center;
+      
+        .activation-card-header{
+          font-size: larger;
+          color: white;
+          font-weight: 600;
+        }
+      }
+      
+      .activation-message{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 10%;
+          .message-activation-label{
+              font-size: larger;
+              font-weight: 600;
+              color: #0d1b2a;
+          }
+      }
+      
+}

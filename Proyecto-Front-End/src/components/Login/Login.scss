@@ -1,0 +1,782 @@
+body {
+  background-color: #fff;
+  overflow-x: hidden !important;
+}
+
+.content-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e2dfdf;
+
+  .inicio{
+    font-size: medium;
+    font-weight: 600;
+    color: #0d1b2a;
+    margin: 10px;
+  }
+
+  .flecha-atras {
+    top: 5%;
+    position: fixed;
+    display: flex;
+    left: 5%;
+    font-size: x-large;
+    text-decoration: none;
+    a {
+      h4 {
+        margin-top: 7px;
+        color: #0d1b2a;
+      }
+
+      display: flex;
+      position: relative;
+      margin: 15px;
+      text-decoration: none;
+
+      svg {
+        font-size: 2em;
+        fill: #1b263b;
+      }
+    }
+  }
+}
+
+.login-card {
+  margin-top: 15px;
+  height: auto;
+  width: 25%;
+  background-color: #fff;
+  text-align: center;
+  border-color: #0d1b2a;
+  box-shadow: 1px 2px 5px rgba(0, 0, 10, 1.2);
+}
+
+.login-card-header {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #001427;
+  border-color: #001427;
+}
+
+.profile-in-header {
+  height: 105px;
+  width: 105px;
+  border-radius: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    font-size: 100px;
+    color: #0d1b2a;
+  }
+}
+
+.contenido-login {
+  margin-top: 20px;
+  padding: 5px;
+}
+
+form {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: center;
+}
+
+.form-group {
+  padding: 15px;
+  width: 200px;
+  height: 40px;
+  position: relative;
+  margin: 10px;
+}
+
+.form-actions {
+  margin-top: 15px;
+}
+
+.form-actions-login button {
+  background-color: #005195;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 200px;
+  margin: 20px 15px 0px 15px;
+  font-size: medium;
+  margin-bottom: 5px;
+}
+
+.ir-a-registrase {
+  width: 100%;
+  background-color: #001427;
+  bottom: 0;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .label-yacuenta {
+    color: #f0ebd8;
+    margin: 0;
+    font-size: medium;
+  }
+  button {
+    font-size: medium;
+    color: #748cab;
+    text-transform: capitalize;
+    text-decoration: underline;
+  }
+}
+
+.opciones-contraseña {
+  h5 {
+    margin: 10px;
+  }
+  button {
+    font-size: small;
+    color: #748cab;
+    text-transform: capitalize;
+    text-decoration: underline;
+  }
+}
+
+.MuiInputBase-root {
+  width: 200px !important;
+}
+
+.error-message-login {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-size: small;
+  align-items: start;
+  display: flex;
+  margin-left: 9px;
+  color: #d93a3a;
+  font-weight: 100;
+  margin-left: 24px;
+}
+
+.modal-Contenido {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  height: auto;
+  background-color: #fff;
+  border: 2px solid #001427;
+  box-shadow: 24px;
+  justify-content: flex-end;
+  align-items: center;
+
+  .modal-title {
+    background-color: #001427;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    position: fixed;
+
+    .modal-title-title {
+      font-size: medium;
+      font-weight: 550;
+      color: #f0ebd8;
+    }
+  }
+
+  .modal-description {
+    display: flex;
+    justify-content: center;
+    .label-send-email {
+      font-size: medium;
+      top: 75px;
+      position: absolute;
+      margin: 5px 15px;
+      color: #0d1b2a;
+    }
+    .email.part {
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+  }
+
+  .modal-email-part {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    top: 110px;
+    position: fixed;
+    margin: 35px 10px 10px 10px;
+
+    .input-email {
+      width: 300px;
+    }
+  }
+
+  .buttons-modal {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 12px;
+    justify-content: space-evenly;
+    button {
+      width: 140px;
+      height: 40px;
+      font-size: medium;
+      background-color: #005195;;
+      text-transform: capitalize;
+      color: #f0ebd8;
+      margin: 5px;
+    }
+  }
+  .form-send-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 135px 10px 10px 10px;
+  }
+
+  .MuiInputBase-root {
+      width: 300px !important;
+  }
+}
+
+.error-message-send-email-reset {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-size: small;
+  align-items: start;
+  display: flex;
+  margin-left: 9px;
+  color: #d93a3a;
+  font-weight: 100;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .content-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e2dfdf;
+
+    .flecha-atras {
+      top: 2%;
+      position: fixed;
+      display: flex;
+      left: 1%;
+      font-size: small;
+      text-decoration: none;
+      a {
+        h4 {
+          margin-top: 7px;
+          color: #0d1b2a;
+        }
+
+        display: flex;
+        position: relative;
+        text-decoration: none;
+
+        svg {
+          font-size: 2em;
+          fill: #001427;
+        }
+      }
+    }
+  }
+
+  .login-card {
+    margin-top: 15px;
+    height: auto;
+    width: 85%;
+    background-color: #fff;
+    text-align: center;
+    border-color: #001427;
+    box-shadow: 1px 2px 5px rgba(0, 0, 10, 1.2);
+  }
+
+  .login-card-header {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #001427;
+    border-color: #001427;
+  }
+
+  .profile-in-header {
+    height: 95px;
+    width: 95px;
+    border-radius: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      font-size: 90px;
+      color: #001427;
+    }
+  }
+
+  .contenido-login {
+    margin-top: 30px;
+    h3 {
+      margin: 5px;
+    }
+  }
+
+  form {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: center;
+  }
+
+  .form-group {
+    padding: 15px;
+    width: 250px;
+    height: 50px;
+    position: relative;
+    margin: 3px;
+  }
+
+  .form-actions {
+    margin-top: 5px;
+  }
+
+  .form-actions-login button {
+    background-color: #005195;
+    color: white;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 200px;
+    margin: 23px 10px 0px 10px;
+    font-size: small;
+  }
+
+  .ir-a-registrase {
+    width: 100%;
+    background-color: #001427;
+    bottom: 0;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .label-yacuenta {
+      color: #f0ebd8;
+      margin: 0;
+      font-size: medium;
+      font-weight: 550;
+    }
+    button {
+      font-size: medium;
+      color: #748cab;
+      text-transform: capitalize;
+      text-decoration: underline;
+    }
+  }
+
+  .opciones-contraseña {
+    h5 {
+      margin: 10px;
+    }
+    button {
+      font-size: small;
+      color: #748cab;
+      text-transform: capitalize;
+      text-decoration: underline;
+    }
+  }
+
+  
+
+  .error-message-login {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: small;
+    align-items: start;
+    display: flex;
+    margin-left: 0px;
+    color: #d93a3a;
+    font-weight: 100;
+    justify-content: center;
+  }
+
+  .modal-Contenido {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: auto;
+    background-color: #fff;
+    border: 2px solid #1b263b;
+    box-shadow: 24px;
+    justify-content: flex-end;
+    align-items: center;
+
+    .modal-title {
+      background-color: #001427;
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      position: fixed;
+
+      .modal-title-title {
+        font-size: medium;
+        font-weight: 550;
+        color: #fff;
+      }
+    }
+
+    .MuiInputBase-root{
+      width: 250px !important;
+    }
+
+    .modal-description {
+      display: flex;
+      justify-content: center;
+      .label-send-email {
+        font-size: medium;
+        top: 65px;
+        position: absolute;
+        margin: 5px 15px;
+        color: #001427;
+      }
+      .email.part {
+        display: flex;
+        justify-content: center;
+        position: relative;
+      }
+    }
+
+    .modal-email-part {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      top: 110px;
+      position: fixed;
+      margin: 35px 10px 10px 10px;
+
+      .input-email {
+        width: 290px;
+      }
+    }
+
+    .buttons-modal {
+      display: grid;
+      flex-direction: column;
+      width: 100%;
+      margin: 12px;
+      justify-content: center;
+      button {
+        width: 240px;
+        height: 30px;
+        font-size: small;
+        background-color: #005195;
+        text-transform: capitalize;
+        color: #f0ebd8;
+        margin: 5px;
+      }
+    }
+    .form-send-email {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      margin: 154px 10px 10px 10px;
+    }
+  }
+
+  .error-message-send-email-reset {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: small;
+    align-items: start;
+    display: flex;
+    margin-left: 9px;
+    color: #d93a3a;
+    font-weight: 100;
+    margin-left: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1266px) {
+  .content-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e2dfdf;
+
+    .flecha-atras {
+      top: 5%;
+      position: fixed;
+      display: flex;
+      left: 5%;
+      font-size: x-large;
+      text-decoration: none;
+      a {
+        h4 {
+          margin-top: 7px;
+          color: #0d1b2a;
+        }
+
+        display: flex;
+        position: relative;
+        margin: 15px;
+        text-decoration: none;
+
+        svg {
+          font-size: 2em;
+          fill: #1b263b;
+        }
+      }
+    }
+  }
+
+  .login-card {
+    margin-top: 15px;
+    height: auto;
+    width: 35%;
+    background-color: #fff;
+    text-align: center;
+    border-color: #001427;
+    box-shadow: 1px 2px 5px rgba(0, 0, 10, 1.2);
+  }
+
+  .login-card-header {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #001427;
+    border-color: #001427;
+  }
+
+  .profile-in-header {
+    height: 125px;
+    width: 125px;
+    border-radius: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      font-size: 100px;
+      color: #001427;
+    }
+  }
+
+  .contenido-login {
+    margin-top: 50px;
+  }
+
+  form {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: center;
+  }
+
+  .form-group {
+    padding: 15px;
+    width: 350px;
+    height: 60px;
+    position: relative;
+  }
+
+  .form-actions {
+    margin-top: 10px;
+  }
+
+  .form-actions-login button {
+    background-color: #005195;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 200px;
+    margin: 20px 10px 0px 10px;
+  }
+
+  .ir-a-registrase {
+    width: 100%;
+    background-color: #001427;
+    bottom: 0;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .label-yacuenta {
+      color: #f0ebd8;
+      margin: 0;
+      font-size: larger;
+    }
+    button {
+      font-size: large;
+      color: #748cab;
+      text-transform: capitalize;
+      text-decoration: underline;
+    }
+  }
+
+  .opciones-contraseña {
+    h5 {
+      margin: 10px;
+    }
+    button {
+      font-size: small;
+      color: #748cab;
+      text-transform: capitalize;
+      text-decoration: underline;
+    }
+  }
+
+  .MuiInputBase-root {
+    width: 300px !important;
+  }
+
+  .modal-Contenido {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    height: auto;
+    background-color: #fff;
+    border: 2px solid #001427;
+    box-shadow: 24px;
+    justify-content: flex-end;
+    align-items: center;
+
+    .modal-title {
+      background-color: #001427;
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      position: fixed;
+
+      .modal-title-title {
+        font-size: medium;
+        font-weight: 550;
+        color: #fff;
+      }
+    }
+
+    .modal-description {
+      display: flex;
+      justify-content: center;
+      .label-send-email {
+        font-size: medium;
+        top: 75px;
+        position: absolute;
+        margin: 5px 15px;
+        color: #0d1b2a;
+      }
+      .email.part {
+        display: flex;
+        justify-content: center;
+        position: relative;
+      }
+    }
+
+    .modal-email-part {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      top: 110px;
+      position: fixed;
+      margin: 35px 10px 10px 10px;
+
+      .input-email {
+        width: 290px;
+      }
+    }
+
+    .buttons-modal {
+      display: grid;
+      flex-direction: column;
+      width: 100%;
+      margin: 12px;
+      justify-content: center;
+      button {
+        width: 300px;
+        height: 40px;
+        font-size: small;
+        background-color: #005195;
+        text-transform: capitalize;
+        color: #fff;
+        margin: 5px;
+      }
+    }
+    .form-send-email {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      margin: 135px 10px 10px 10px;
+    }
+  }
+
+  .error-message-login {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: small;
+    align-items: start;
+    display: flex;
+    margin-left: 9px;
+    color: #d93a3a;
+    font-weight: 100;
+    margin-left: 24px;
+    justify-content: center;
+  }
+
+  .error-message-send-email-reset {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: small;
+    align-items: start;
+    display: flex;
+    margin-left: 9px;
+    color: #d93a3a;
+    font-weight: 100;
+    margin-left: 5px;
+  }
+}

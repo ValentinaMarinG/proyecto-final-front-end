@@ -1,0 +1,384 @@
+body{
+  background-color: #fff;
+  padding: 0 !important;
+}
+
+.PQRSF {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  .PQRSF-menu {
+    width: 20%;
+    display: none;
+    flex-direction: column;
+    background-color: #faf4f4;
+
+    .menu-PQRSF {
+      width: 100%;
+      height: 100%;
+      display: none;
+      flex-direction: column;
+      background-color: #faf4f4;
+
+      .menu-PQRSF-title {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+
+        .menu-PQRSF-title-label {
+          font-size: x-large;
+          color: #1b263b;
+          font-weight: 700;
+          margin: 20px;
+        }
+      }
+
+      .ayuda-botones {
+        margin: 10px 20px 10px 20px;
+
+        .ayuda-botones-botones {
+          margin: 20px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          align-content: flex-start;
+          justify-content: space-between;
+          border-bottom: 1px solid #ccc;
+
+          .label-help-buttoms {
+            color: #1b263b;
+            font-size: medium;
+          }
+
+          .label-help-buttoms.active{
+            color: orange;
+          }
+
+          .help-buttoms{
+            padding: 0;
+            min-width: 0px;
+
+            svg {
+              fill: #1b263b;
+              font-size: medium;
+            }
+          }
+
+          .help-buttoms.active{
+            svg{
+              fill: orange;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .PQRSF-Form {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 30px;
+
+    .PQRSF-Form-content {
+      width: 100%;
+      margin-top: 1vw;
+
+      .PQRSF-Form-content-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .PQRSF-Form-content-title-label {
+          font-size: x-large;
+          color: #1b263b;
+          font-weight: 700;
+          margin: 5px 20px 5px 7vw;
+        }
+      }
+
+      .PQRSF-form-subtitles {
+        font-size: medium;
+        color: #1b263b;
+        margin: 5px 20px 20px 0px;
+        text-decoration: underline;
+      }
+
+      .PQRSF-form-subtitles-sub{
+        font-size: small;
+        color: #000;
+        margin: 5px 20px 20px 0px;
+      }
+      .div-boxes-pqrsf{
+        width: 80%;
+        margin:5px 5px 15px 0px;
+      }
+    }
+
+    .div-form-pqrsf{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 5px;
+
+      .subdiv-form-pqrsf{
+        align-items: center;
+        display: flex;
+      }
+    }
+
+    .div-send-pqrsf{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 80%;
+    }
+
+    .buttom-send-pqrsf{
+      margin-left: 0px;
+      background-color: #1b263b;
+      color: #fff;
+      width: 150px;
+      align-self: center;
+    }
+
+    .textfield{
+      margin: 5px 10px;
+    }
+
+    .MuiInputBase-root div {
+      padding: 10px !important;
+    }
+
+    .MuiInputBase-root {
+      width: 350px !important;
+    }
+
+    .MuiFormControl-root {
+      margin-left: 10px;
+    }
+
+    .div-form-pqrsf-1{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      .subdiv-form-pqrsf{
+        margin: 5px;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      /* .disp-movi-doc{
+        margin-left: 8px;
+      } */
+    }
+
+    .editor{
+      margin: 20px 0px;
+      padding: 10px;
+      width: 88%;
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  
+.PQRSF {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  .PQRSF-menu {
+    width: 20%;
+    display: none;
+    flex-direction: column;
+    background-color: #748cab;
+    box-shadow: 1px 2px 5px rgba(0, 0, 10, 1.2);
+
+    .menu-PQRSF {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: #faf4f4;
+
+      .menu-PQRSF-title {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+
+        .menu-PQRSF-title-label {
+          font-size: x-large;
+          color: #1b263b;
+          font-weight: 700;
+          margin: 20px;
+        }
+      }
+
+      .ayuda-botones {
+        margin: 10px 20px 10px 20px;
+
+        .ayuda-botones-botones {
+          margin: 20px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          align-content: flex-start;
+          justify-content: space-between;
+          border-bottom: 1px solid #ccc;
+
+          .label-help-buttoms {
+            color: #1b263b;
+            font-size: medium;
+          }
+
+          .label-help-buttoms.active{
+            color: orange;
+          }
+
+          .help-buttoms{
+            padding: 0;
+            min-width: 0px;
+
+            svg {
+              fill: #1b263b;
+              font-size: medium;
+            }
+          }
+
+          .help-buttoms.active{
+            svg{
+              fill: orange;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .PQRSF-Form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 30px;
+
+    .PQRSF-Form-content {
+      width: 100%;
+      margin-top: 1vw;
+
+      .PQRSF-Form-content-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .PQRSF-Form-content-title-label {
+          font-size: x-large;
+          color: #1b263b;
+          font-weight: 700;
+          margin: 5px 20px 5px 7vw;
+        }
+      }
+
+      .PQRSF-form-subtitles {
+        font-size: medium;
+        color: #1b263b;
+        margin: 5px 20px 20px 0px;
+        text-decoration: underline;
+      }
+
+      .PQRSF-form-subtitles-sub{
+        font-size: small;
+        color: #000;
+        margin: 5px 20px 20px 0px;
+      }
+      .div-boxes-pqrsf{
+        width: 80%;
+        margin:5px 5px 15px 0px;
+      }
+    }
+
+    .div-form-pqrsf{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 5px;
+
+      .subdiv-form-pqrsf{
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+
+    .div-send-pqrsf{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 80%;
+      justify-content: center;
+    }
+
+    .buttom-send-pqrsf{
+      margin-left: 0px;
+      background-color: #1b263b;
+      color: #fff;
+      width: 150px;
+      align-self: center;
+    }
+
+    .textfield{
+      margin: 5px 10px;
+    }
+
+    .MuiInputBase-root div {
+      padding: 10px !important;
+    }
+
+    .MuiInputBase-root {
+      width: 230px !important;
+    }
+
+    .MuiFormControl-root {
+      margin-left: 10px;
+    }
+
+    .div-form-pqrsf-1{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      .subdiv-form-pqrsf{
+        margin: 5px;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+
+        .disp-movi-name{
+          margin-bottom: 5px;
+        }
+
+        .disp-movi-doc{
+          margin-left: 0px;
+          margin-top: 5px;
+        }
+      }
+    }
+
+    .editor{
+      margin: 20px 0px;
+      padding: 10px;
+      width: 88%;
+    }
+  }
+}
+}

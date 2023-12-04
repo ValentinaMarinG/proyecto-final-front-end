@@ -1,0 +1,58 @@
+
+.categories-div-title {
+  margin: 30px 10px 10px 10px;
+  font-size: xx-large;
+  font-weight: 600;
+  color: #1b263b;
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.form-categories{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boton-add-category {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 0px 10px;
+  button {
+    margin: 15px 15px 15px 15px;
+    align-self: flex-start;
+  }
+}
+
+.category-box-form{
+    margin: 0px 12px;
+}
+
+.div-inputs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.button-accept-category{
+    margin: 20px 10px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+
+    button{
+        width: 120px;
+    }
+}
+
+.text-field-categories{
+    margin: 5px !important;
+}

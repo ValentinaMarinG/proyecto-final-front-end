@@ -1,0 +1,274 @@
+body {
+  background-color: #415a77;
+  padding: 0 !important;
+}
+
+.content-dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  overflow-y: auto;
+}
+
+.MenuTopp {
+  top: 0;
+}
+
+.dashboard-header {
+  width: 100%;
+  top: 0%;
+  height: auto;
+  position: fixed;
+  z-index: 1;
+}
+
+.custom-modal-admin {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  height: auto;
+  background-color: #fff;
+  border: 1px solid #020408;
+  box-shadow: 24px;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 5px;
+  padding: 25px;
+
+  .custom-modal-title-admin {
+    font-size: medium;
+    font-weight: 400;
+    color: #1b263b;
+    margin: 10px;
+  }
+
+  .div-buttons-admin {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin: 20px 15px 0px 15px;
+    button {
+      width: 124px;
+      height: 35px;
+      font-size: medium;
+      background-color: #005195;
+      text-transform: capitalize;
+      color: #f0ebd8;
+      margin: 5px;
+    }
+  }
+}
+
+.dashboard-body {
+  display: flex;
+  height: 100vh;
+  top: 5.5vw;
+  position: relative;
+  flex-direction: row;
+  width: 100%;
+
+  .dash-table-list {
+    flex-grow: 1;
+    overflow: hidden;
+    padding: 10px;
+  }
+
+  .dash-sidermenu {
+    flex-shrink: 0;
+    min-width: 30px;
+    max-width: 170px;
+    width: 170px;
+    overflow-x: hidden;
+    transition: all 0.3s ease;
+    color: #fff;
+    transition: width 0.3s ease;
+
+    .siderbar-container {
+      display: flex;
+    }
+  }
+  .menu-open {
+    .dash-sidermenu {
+      width: 250px;
+    }
+  }
+
+  .menu-closed {
+    .dash-sidermenu {
+      width: 50px;
+    }
+  }
+}
+
+.menu-desplegable {
+  top: 0.95vw !important;
+  align-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  .menuitem {
+    height: 2vw;
+    display: flex;
+    align-self: flex-start;
+    button {
+      font-size: small;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.div-componentes {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.sider-dash-con {
+  width: 16%;
+}
+
+.MuiPaper-root{
+  opacity: 1;
+    top: 50px;
+    left: 212px;
+    width: fit-content ;
+    left: 88% ;
+}
+
+@media screen and (max-width: 768px) {
+  .content-dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #fff;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    overflow-y: auto;
+  }
+
+  .MenuTopp {
+    top: 0;
+  }
+
+  .dashboard-header {
+    width: 100%;
+    top: 0%;
+    height: auto;
+    position: fixed;
+  }
+
+  .custom-modal-admin {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid #020408;
+    box-shadow: 24px;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 10px;
+    padding: 15px;
+
+    .custom-modal-title-admin {
+      font-size: medium;
+      font-weight: 400;
+      color: #1b263b;
+      margin: 0px 30px;
+      align-self: center;
+    }
+
+    .div-buttons-admin {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      flex-direction: row;
+      width: 100%;
+      margin: 20px 15px 0px 15px;
+      button {
+        width: 120px;
+        height: 30px;
+        font-size: medium;
+        background-color: #005195;
+        text-transform: capitalize;
+        color: #f0ebd8;
+        margin: 5px;
+      }
+    }
+  }
+
+  .dashboard-body {
+    display: flex;
+    height: auto;
+    top: 15vw;
+
+    .dash-table-list {
+      flex-grow: 1;
+      overflow: hidden;
+      padding: 10px;
+    }
+
+    .dash-sidermenu {
+      flex-shrink: 0;
+      min-width: 30px;
+      max-width: 170px;
+      width: 170px;
+      overflow-x: hidden;
+      transition: all 0.3s ease;
+      color: #fff;
+      transition: width 0.3s ease;
+
+      .siderbar-container {
+        display: flex;
+      }
+    }
+    .menu-open {
+      .dash-sidermenu {
+        width: 250px;
+      }
+    }
+
+    .menu-closed {
+      .dash-sidermenu {
+        width: 50px;
+      }
+    }
+
+    .user-table {
+      width: 50% !important;
+    }
+  }
+
+  .menu-desplegable {
+    top: 0.95vw !important;
+    align-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .menuitem {
+      height: 2vw;
+      display: flex;
+      align-self: flex-start;
+      button {
+        font-size: small;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

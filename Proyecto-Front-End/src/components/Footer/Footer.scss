@@ -1,0 +1,164 @@
+.Footer {
+  background: #001427;
+  color: #fff;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+
+  .div-footer-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 85%;
+    padding: 15px;
+
+    .titulofooter {
+      margin: 5px;
+
+      .label-titulofooter {
+        font-size: x-large;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .grid-principal-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .grid-styles-1 {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 0;
+    }
+  }
+
+  .grid1-style,
+  .grid2-style,
+  .grid3-style {
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+
+    .contacto-label {
+      font-size: medium;
+      font-weight: 600;
+      margin: 20px 10px 10px 10px;
+    }
+
+    .grid2-title {
+      font-size: medium;
+      font-weight: 600;
+      margin: 10px;
+    }
+    display: flex;
+  }
+
+  .label-cont-description {
+    font-size: smaller;
+    font-weight: 100;
+    margin: 10px;
+  }
+
+  & .svg-icon {
+    width: auto;
+    height: 30px;
+    margin: 5px;
+    fill: #fff;
+    &:hover {
+      fill: #b3dbf8;
+    }
+  }
+
+  & .location-link {
+    text-decoration: none;
+    color: #b3dbf8;
+    margin: 5px;
+
+    &:hover {
+      color: #b3dbf8;
+    }
+  }
+
+  .logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .img1 {
+      height: 75px;
+      width: auto;
+      margin: 55px 10px 10px 10px;
+      filter: grayscale(60%);
+      transition: filter 0.3s ease;
+
+      &:hover{
+        filter: grayscale(0%);
+      }
+    }
+    .img2 {
+      height: 80px;
+      width: auto;
+      margin: 50px 10px 10px 10px;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+
+      &:hover{
+        filter: grayscale(0%);
+      }
+    }
+  }
+
+  & .grid2-title-link {
+    text-align: start;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+
+    label {
+      font-size: small;
+      color: #fff;
+
+      &:hover {
+        color: #b3dbf8;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      align-items: center;
+      display: flex;
+
+      &:hover {
+        color: #b3dbf8;
+      }
+    }
+
+    svg {
+      width: auto;
+      height: 20px;
+      margin: 10px;
+      fill: #fff;
+      &:hover {
+        fill: #b3dbf8;
+      }
+    }
+  }
+}
+
+h2 {
+  margin: 0;
+}
+
+.MuiGrid-root {
+    padding: 0;
+}

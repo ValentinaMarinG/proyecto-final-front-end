@@ -1,0 +1,64 @@
+.grid-principal-container {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; 
+  
+    .grid-container-image {
+      flex: 1; 
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+  
+      .img-content-grid {
+        padding: 0;
+      }
+  
+      .text-content-grid {
+        padding: 0;
+        text-align: center; 
+      }
+    }
+  }
+  
+  .img-shopping-cart {
+    height: 200px;
+    width: auto;
+  }
+
+  .row-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+  }
+  
+  .img-content-grid {
+    padding: 0;
+  }
+  
+  .text-content-grid {
+    width: 700px;
+    position: relative;
+    text-align: start;
+    margin: 5px;
+  }
+
+  .text-content-grid-box{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    margin: 5px;
+  }
+
+  .text-content-grid-box p {
+    margin-right: 10px; 
+  }
+
+  .checkbox {
+    position: relative;
+    z-index: 2;
+  }

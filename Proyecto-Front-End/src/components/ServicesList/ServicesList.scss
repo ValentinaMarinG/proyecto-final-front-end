@@ -1,0 +1,96 @@
+.content-services-list {
+  width: 90%;
+  height: 100%;
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  .grid1-style {
+    background-color: #b4dbf9;
+  }
+  .grid2-style {
+    background-color: #b4dbf9;
+  }
+  .grid3-style {
+    background-color: #b4dbf9;
+  }
+  .grid4-style {
+    background-color: #b4dbf9;
+    .grid-container-image{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    .img-content-grid{
+      background-color: #b4dbf9;
+      padding: 10px;
+      img{
+        width: 300px;
+        height: 300px;
+        border-radius: 5px;
+        margin: 5px;
+      }
+      .button-fav-group{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        .button1{
+          margin: 5px;
+          width: 50px;
+          height: 50px;
+        }
+        .button2{
+          margin: 5px;
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+    .text-content-grid{
+      background-color: aquamarine;
+      p{
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+.img-modal-container{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .img-modal{
+    width: 300px;
+    height: auto;
+  }
+}
+
+.modal-text-container{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p{
+    font-size: 20px;
+  }
+}
+
+.close-modal{
+  align-content: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  position: fixed;
+  right: 0;
+  margin-right: 20px;
+}
